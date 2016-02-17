@@ -25,7 +25,7 @@ class ffSqlModel
   {
 
     $this->host = "localhost";
-    $this->dbName = "dev8_dev_copy";
+    $this->dbName = "aura_demo";
     $this->dbUsername = "admin";
     $this->dbPassword = "admin90210";
 
