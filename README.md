@@ -16,15 +16,15 @@ You shouldn't have to give this file much thought, it was designed for the devel
 **Core.php**: This works generally like the Core files we're using now. Gather data with a method that calls the model and call that method in your method that calls the View library. The code is commented so hopefully this will be easy to use.
 
 **The view files** in the demo and what they do:
-- One Step View
+- **One Step View**
   - View/templates/customers_1.php
-- Sub Template or Partial view
+- **Sub Template or Partial view**
   - View/templates/_cart_part.php (the data part of the view - since this is just data, it can reused in other templates)
   - View/templates/customers_2.php (inserts the code into an HTML snippet)
-- Two Step View
+- **Two Step View**
   - View/templates/_cust_nav_elems.php
   - View/layouts/customer_nav.php
-- Two Step View using sections
+- **Two Step View using sections**
   - View/templates/_products_section.php
   - View/layouts/products_layout.php
 
@@ -41,10 +41,13 @@ Example:
       $modelData = $this->getCustomerData();
       // package data in a named array for view to iterate over
       $sendArray['cust_fnames'] = $modelData;
+      
       // the name of the view template file and registered view name
       $mainViewName = '_cust_nav_elems';
+      
       // the name of the layout template file and registered layout name
       $layoutName = 'customer_nav';
+      
       // call the view factory and registration
       $output = $this->indexView->twoStepView($mainViewName, $layoutName, $sendArray, $this->templatePath, $this->layoutPath);
 
