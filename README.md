@@ -28,7 +28,7 @@ You shouldn't have to give this file much thought, it was designed for the devel
   - View/templates/_products_section.php
   - View/layouts/products_layout.php
 
-What nice about the way you register a view using the core, is that you can look at the code methods and see the name of the view and/or template file. 
+What nice about the way you register a view using the core, is that you can look at the core view methods and see the name of the view and/or template file. 
 
 Example:
 ```
