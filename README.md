@@ -55,3 +55,7 @@ Example:
       return $output;
     }
 ```
+###Escaping Data
+Aura Views requires that all data going into a template must be escaped. In the demo this is being done by using another Aura module called Aura.Html. You can read the docs about [escaping data here](https://github.com/auraphp/Aura.Html#escaping).
+
+In demo views where data is being interated over you'll see: `$this->escape()->html($cust['customer_id']);`. **Please read the docs** about Aura.Html and escaping, there are escaping methods for HTML, Unquoted Html attributes, CSS and JavaScript.
