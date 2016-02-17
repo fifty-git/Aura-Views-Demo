@@ -24,17 +24,16 @@ class ffSqlModel
   function __construct()
   {
 
+    /**
+     * The aura_demo database contains 3 tables from the Dev8 DB.
+     * I created it for working locally, just install and set the credentials here.
+     * Since the tables match Dev8 DB you won't have to change any code but this connection info
+     * if you want to work on your sandbox
+     */
     $this->host = "localhost";
     $this->dbName = "aura_demo";
-    $this->dbUsername = "admin";
-    $this->dbPassword = "admin90210";
-
-    /*
-    $this->host = "127.0.0.1";
-    $this->dbName = "flower0_CartCmsFromProd";
-    $this->dbUsername = "floweruser";
-    $this->dbPassword = "84jfjk42";
-    */
+    $this->dbUsername = "aura_user";
+    $this->dbPassword = "FlowerPower";
 
     $extendedPdoDb = "mysql:host=".$this->host.";dbname=".$this->dbName;
     $extendedPdoUsername = $this->dbUsername;
