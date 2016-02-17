@@ -19,7 +19,7 @@ You shouldn't have to give this file much thought, it was designed for the devel
 - **One Step View**
   - View/templates/customers_1.php
 - **Sub Template or Partial view**
-  - View/templates/_cart_part.php (the data part of the view - since this is just data, it can reused in other templates)
+  - View/templates/_cart_part.php (the data part of the view - *since this is just data, it can reused in other templates*)
   - View/templates/customers_2.php (inserts the code into an HTML snippet)
 - **Two Step View**
   - View/templates/_cust_nav_elems.php
@@ -39,6 +39,7 @@ Example:
     {
       // get data from model
       $modelData = $this->getCustomerData();
+      
       // package data in a named array for view to iterate over
       $sendArray['cust_fnames'] = $modelData;
       
